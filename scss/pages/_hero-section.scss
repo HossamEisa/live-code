@@ -1,0 +1,235 @@
+.hero-section {
+	position: relative;
+	// background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: calcRem(250);
+
+	@include mq('lg') {
+		padding-top: calcRem(70);
+		padding-bottom: calcRem(120);
+	}
+
+	@include mq('xxl') {
+		padding-bottom: calcRem(90);
+		padding-top: calcRem(35);
+
+	}
+
+	&::before {
+		content: "";
+		background-color: rgb(17, 9, 3);
+		position: absolute;
+		#{$right}: 0;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		z-index: 0;
+		width: 100%;
+		opacity: 0;
+
+		@include mq('lg') {
+			width: 12.5%;
+			opacity: 0.612;
+		}
+
+		@include mq('xl') {
+			width: 13%;
+		}
+
+		@include mq('xxl') {
+			width: 13.5%;
+		}
+	}
+
+	&::after {
+		content: "";
+		background-color: rgb(4, 15, 26);
+		position: absolute;
+		#{$left}: 0;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		z-index: 0;
+		width: 100%;
+		opacity: 0;
+
+		@include mq('lg') {
+			width: 33.3%;
+			opacity: 0.612;
+		}
+	}
+
+	// Top
+	.gallery-top-container {
+		width: 100%;
+		color: $white;
+		padding-bottom: 3rem;
+		padding: 0 2rem;
+		position: relative;
+
+		@include mq('lg') {
+			text-align: $right;
+		}
+
+		.gallery-top {
+			h3,
+			.title {
+				font-size: calcRem(27);
+				line-height: 2;
+				font-family: $droid-b;
+				margin-bottom: 1rem;
+				text-align: center;
+			}
+
+			p,
+			.text {
+				text-align: center;
+				color: #dbd8db;
+				font-size: calcRem(14.91);
+				line-height: 1.7;
+				margin-bottom: 1rem;
+				width: 100%;
+				text-align: center;
+				@include line-clamp(5);
+				@include mq('xxl') {
+					width: 80%;
+					margin: 0 auto;
+					margin-bottom: 1.5rem;
+					@include line-clamp(4);
+				}
+			}
+
+			.btn {
+				color: $white;
+				border-color: $white;
+				font-size: calcRem(16);
+				padding: 0.6rem 2.2rem;
+			}
+		}
+
+		.swiper-pagination {
+			bottom: - calcRem(50);
+			width: 100%;
+			#{$left}: 0;
+		}
+	}
+
+	// thumbs
+	.gallery-thumbs-container {
+		position: absolute;
+		height: calcRem(120);
+		right: 0;
+		bottom: -3px;
+		padding-left: 7rem;
+		background: $white;
+		z-index: 9;
+		border-top-left-radius: $border-radius;
+		width: 100%;
+
+		@include mq('lg') {
+			bottom: 0px;
+			height: calcRem(160);
+			width: 32%;
+		}
+
+		.gallery-thumbs {
+			height: 100%;
+			box-sizing: border-box;
+			padding: 10px 0;
+			padding-#{$right}: 35%;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+
+			&.swiper-container {
+				.swiper-slide {
+					background-size: cover;
+					background-position: center;
+					// width: 190px!important;
+					height: 100%;
+					opacity: 0.3;
+					border-radius: $border-radius;
+
+					&.swiper-slide-thumb-active {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		.controlls {
+			position: absolute;
+			left: 0;
+			width: 6rem;
+			height: 100%;
+			top: 0;
+
+			.swiper-pagination {
+				bottom: initial;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translate(-50%, 50%);
+				font-family: $mont;
+
+				.swiper-pagination-current {
+					font-size: calcRem(28);
+				}
+
+				.swiper-pagination-total {
+					font-size: calcRem(14);
+				}
+			}
+
+			.swiper-button-next,
+			.swiper-button-prev {
+				outline: none;
+				top: 60%;
+
+				&::after {
+					content: "";
+					background: url("../img/active-arrow.png");
+					width: 27px;
+					height: 27px;
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+
+				&.swiper-button-disabled {
+					&::after {
+						background: url("../img/disabled-arrow.png");
+						width: 27px;
+						height: 27px;
+						background-repeat: no-repeat;
+						background-size: contain;
+					}
+				}
+			}
+
+			.swiper-button-next {
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+				left: 1rem;
+				right: inherit;
+
+				&.swiper-button-disabled {
+					-webkit-transform: rotate(0deg);
+					transform: rotate(0deg);
+					opacity: 1;
+				}
+			}
+
+			.swiper-button-prev {
+				left: inherit;
+				right: 0.3rem;
+
+				&.swiper-button-disabled {
+					-webkit-transform: rotate(180deg);
+					transform: rotate(180deg);
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

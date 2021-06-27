@@ -1,0 +1,19 @@
+
+.custom-control-input:checked ~ .custom-control-label::before {
+	border-color: #e3b472;
+	background-color: $brand-color;
+}
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+	color: #fff;
+	background-color: rgba(170, 132, 80, 0.45);
+	border-color: rgba(241, 207, 161, 0.58);
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+	box-shadow: 0 0 0 0.2rem rgba(227, 180, 114, 0.92);
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+	background-position: center center;
+	background-size: 6px;
+}

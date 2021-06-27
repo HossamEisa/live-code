@@ -1,0 +1,73 @@
+@charset 'UTF-8';
+//Helper 
+@import 
+"helper/_directions";
+
+// 1. Configuration and helpers
+@import 
+'abstracts/functions',
+'abstracts/mixins';
+
+// 2. Vendors
+@import 
+'vendors/animate',
+'vendors/nice-select',
+'vendors/swiper-style';
+
+
+
+// 3. Base stuff
+@import 
+'base/rest',
+'base/normalize',
+'base/color',
+'base/base',
+'base/hover',
+'base/fonts',
+'base/typography',
+'base/helpers',
+'base/IE-FixStyle';
+
+
+// 4. Components
+@import 
+'components/dropdown',
+'components/modal',
+// New
+'components/button',
+'components/inputs',
+'components/land-services',
+'components/border-bottom-style',
+'components/main-title',
+'components/hero-carousel',
+'components/fixed-menu',
+'components/scroll-to-top',
+'components/search-input',
+'components/widget-section',
+'components/fancy-tabs',
+'components/news-item',
+'components/gallery-video',
+'components/hvr-tabs',
+'components/how-can-help',
+'components/map-box',
+'components/learning-adviser-box',
+'components/graduate-card',
+'components/graduate-carousel',
+'components/digital-library-tabs',
+'components/form',
+'components/numbers-boxes',
+'components/timeline-events',
+'components/event-card',
+'components/pagination',
+'components/news-carousel';
+// 5. Layout-related sections 
+@import 'layout/header',
+'layout/footer';
+
+
+
+// 6. Page-specific styles
+@import 'pages/home';
+@import 'pages/hero-section';
+@import 'pages/massar'; 
+

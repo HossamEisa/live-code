@@ -1,0 +1,265 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+	background: url(../img/bg.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: 9;
+	position: relative;
+	background-size: cover;
+	@include mq('lg') {
+		padding-top: calcRem(30);
+		background-size: 100%;
+
+		&::after {
+			position: absolute;
+			content: "";
+			background: url(../img/cloud.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 120%;
+			height: 310px;
+			#{$left}: 48%;
+			z-index: -1;
+			top: 120px;
+			top: 120px;
+			transform: translate(-50%, -50%);
+			width: 560px;
+			top: 55%;
+
+			@include mq('lg') {
+				height: 260px;
+				#{$left}: 48%;
+				width: 500px;
+			}
+
+			@include mq('xl') {
+				height: 300px;
+				#{$left}: 49%;
+				width: 600px;
+			}
+
+			@include mq('xxl') {
+				left: 49.3%;
+			}
+		}
+	}
+
+	.ro2ya {
+		img {
+			width: 80px;
+
+			@include mq('xl') {
+				width: auto;
+			}
+		}
+	}
+
+	.logo {
+		img {
+			width: 80px;
+
+			@include mq('lg') {
+				width: calcRem(180);
+			}
+
+			@include mq('xl') {
+				width: calcRem(150);
+				margin-bottom: -15px;
+			}
+
+			@include mq('xxl') {
+				width: calcRem(130);
+				margin-bottom: -15px;
+			}
+		}
+	}
+
+	.logo-text {
+		font-family: $droid-b;
+		padding-#{$right}: 0.6rem;
+		font-size: calcRem(14);
+
+		span {
+			display: block;
+			font-size: calcRem(12);
+			font-weight: bold;
+		}
+
+		@include mq('xxl') {
+			padding-top: 2.7rem;
+		}
+	}
+
+	.navbar {
+		@include mq('lg') {
+			background-image: -moz-linear-gradient(0deg, rgb(196, 136, 51) 0%, rgb(10, 134, 196) 100%);
+			background-image: -webkit-linear-gradient(0deg, rgb(196, 136, 51) 0%, rgb(10, 134, 196) 100%);
+			background-image: -ms-linear-gradient(0deg, rgb(196, 136, 51) 0%, rgb(10, 134, 196) 100%);
+		}
+	}
+
+	.navbar>.container,
+	.navbar>.container-fluid {
+		display: block;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.navbar-nav {
+		// @include mq('xxl') {
+		// 	margin-top: 35px;
+		// 	padding-right: 40px;
+		// }
+	}
+
+	.navbar-toggler {
+		outline: none;
+	}
+
+	.nav-item {
+		padding: 0;
+		margin-left: 0;
+		padding: 0.5rem 1.2rem;
+
+		&:last-child {
+			margin-left: 0;
+		}
+
+		position: relative;
+
+		@include mq('lg') {
+			&:last-child {
+				margin-left: 0;
+			}
+		}
+
+		.nav-link {
+			color: $black;
+			padding: 0;
+			font-size: calcRem(14);
+			font-family: $droid-b;
+
+			@include mq('lg') {
+				color: $white;
+			}
+		}
+
+		&:hover {
+			.nav-link {
+				color: $yellow-color;
+
+				span {
+					&:before {
+						color: $brand-color;
+					}
+				}
+			}
+		}
+
+		&.active {
+			position: relative;
+
+			&::before {
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 0.214rem;
+				background: $brand-color;
+				transform: scaleX(0);
+
+				@include mq('lg') {
+					transform: scaleX(1);
+				}
+			}
+
+			.nav-link {
+				color: $yellow-color;
+			}
+		}
+	}
+
+	// Start Top Header
+	.top-header {
+		padding: calcRem(10) 0 calcRem(10);
+		background-image: -moz-linear-gradient(0deg, rgb(196, 136, 51) 0%, rgb(10, 134, 196) 100%);
+		background-image: -webkit-linear-gradient(0deg, rgb(196, 136, 51) 0%, rgb(10, 134, 196) 100%);
+		background-image: -ms-linear-gradient(0deg, rgb(196, 136, 51) 0%, rgb(10, 134, 196) 100%);
+
+		@include mq('lg') {
+			padding: calcRem(30) 0 calcRem(0);
+			background-image: none;
+		}
+
+		.english-lang {
+			font-family: $font-num;
+			font-weight: bold;
+			font-size: calcRem(24);
+			color: $white;
+
+			@include mq('lg') {
+				color: $black;
+			}
+		}
+
+		//
+		.top-logo {
+			position: relative;
+
+			a {
+				text-decoration: none;
+				color: $black;
+
+				&:hover {
+					color: $black;
+				}
+			}
+		}
+
+		// 3rd
+		.date {
+			li {
+				list-style-type: none;
+				position: relative;
+				font-family: $droid-b;
+				font-size: calcRem(12);
+				font-weight: bold;
+				text-align: center;
+				line-height: 1.5;
+				color: $white;
+
+				@include mq('lg') {
+					color: $black;
+				}
+
+				&:first-child {
+					margin-left: 20px;
+
+					&::after {
+						position: absolute;
+						content: "";
+						left: -10px;
+						height: 100%;
+						top: 0;
+						width: 1px;
+						background: $brand-color;
+					}
+				}
+			}
+		}
+
+		//
+	}
+}
+
+.login-btn {
+	font-size: calcRem(12);
+	padding: 0.6rem 1.5rem;
+	font-family: $droid-b;
+}
+
+.logo-sub-text {
+	margin-top: 5px;
+	font-size: calcRem(12);
+}

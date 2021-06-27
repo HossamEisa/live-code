@@ -1,0 +1,2435 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title>Alwaheen Portal</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='css/all.min.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/nice-select.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/jquery.fancybox.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/swiper.min.css' media="all" rel='stylesheet' type='text/css'>
+    <link href='css/style-rtl.min.css' media="all" rel='stylesheet' type='text/css'>
+    <style>
+        .fancybox-content {
+            width: 100vw!important;
+            height: 100%!important;
+        }
+        .fancybox-is-open .fancybox-bg {
+            opacity: 1;
+        }
+        .fancybox-slide {
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <span class=" d-none" id="clickarea"></span>
+    <!-- Start Header -->
+    <div class="wrapper overflow-hidden" id="wrapper">
+        <header class="header">
+            <!-- top head -->
+            <div class="top-header overflow-hidden">
+                <div class="container">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-4 col-lg-3">
+                            <div class="row no-gutters align-items-center justify-content-center">
+                                <a href="" class="mr-3 english-lang">
+                                    En
+                                </a>
+                                <button class="btn btn-primary login-btn" data-toggle="modal" data-target="#loginmodal">
+                                    <span class="d-none d-lg-inline-block">تسجيل الدخول</span>
+                                    <i class="fas fa-sign-in-alt d-lg-none"></i>
+                                </button>
+                            </div>
+                            <div class="row no-gutters mt-4 justify-content-center d-none d-lg-flex pb-2">
+                                <a href="" title="رؤية 2030" class="ro2ya">
+                                    <img src="img/2030.png" alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 d-none d-lg-flex justify-content-center top-logo">
+                            <a href="#"
+                                class="wow fadeInDown d-inline-flex flex-column align-items-center justify-content-center"
+                                title="منصة الوحيين" data-wow-duration="3s">
+                                <div>
+                                    <span class="logo"> <img src="img/logo.png" alt="..."></span>
+                                </div>
+                                <span class="logo-sub-text mb-2">لتعليم علوم القرآن الكريم والسنة النبوية الشريفة</span>
+                            </a>
+                        </div>
+                        <div class="col-8 col-lg-3 d-flex align-items-lg-end justify-content-end">
+                            <div class="row flex-column align-items-center no-gutters">
+                                <div class="date">
+                                    <ul class="d-flex">
+                                        <li>الاثنين 22 يناير 2020</li>
+                                        <li>الموافق 20 محرم 1441</li>
+                                    </ul>
+                                </div>
+                                <div class="d-none d-lg-block mt-3">
+                                    <div class="social-icons mr-4">
+                                        <ul>
+                                            <li class="wow bounce" data-wow-duration="2s">
+                                                <a href="" class="black-color"><i class="fab fa-facebook"></i></a>
+                                            </li>
+                                            <li class="wow bounce" data-wow-duration="2s" data-wow-delay="0.2s">
+                                                <a href="" class="black-color"> <i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="wow bounce" data-wow-duration="2s">
+                                                <a href="" class="black-color"><i class="fab fa-youtube"></i></a>
+                                            </li>
+
+                                            <li class="wow bounce" data-wow-duration="1s" data-wow-delay="0.2s">
+                                                <a href="" class="black-color">
+                                                    <i class="fab fa-instagram"></i></a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="search-input-round mt-3 mb-2 d-none d-lg-flex justify-content-lg-center">
+                                    <form action="">
+                                        <input id="top-search" placeholder="البحث">
+                                        <button type="submit"><i class="fas fa-search"></i></button>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Menu -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="logo-and-button col-7 order-0 d-lg-none">
+                            <a href="" class="navbar-brand d-flex align-items-center wow zoomIn" data-wow-duration="2s">
+                                <span class="logo"> <img src="img/logo.png" alt="..."></span>
+                            </a>
+                        </div>
+                        <!--  Main Menu-->
+                        <div class="collapse navbar-collapse col-lg-12 order-2 order-lg-1" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto pt-2 pt-lg-0">
+                                <li class="nav-item animate fadeIn">
+                                    <a class="nav-link" href="#">عن منصة الوحيين </a>
+                                </li>
+                                <li class="nav-item animate fadeIn">
+                                    <a class="nav-link" href="#">البرامج التعليمية</a>
+                                </li>
+                                <li class="nav-item animate fadeIn">
+                                    <a class="nav-link" href="#">المقرأة الالكترونية</a>
+                                </li>
+                                <li class="nav-item animate fadeIn">
+                                    <a class="nav-link" href="#">خدمات منصة الوحيين</a>
+                                </li>
+                                <li class="nav-item animate fadeIn">
+                                    <a class="nav-link" href="#">الهيكل الإداري والتنظيمي</a>
+                                </li>
+                                <li class="nav-item animate fadeIn">
+                                    <a class="nav-link" href="#"> التواصل والدعم المباشر</a>
+                                </li>
+                                <li class="d-lg-none  animate fadeIn">
+                                    <div class="search-input-round mt-2 mb-2">
+                                        <form action="">
+                                            <input id="top-search" placeholder="البحث">
+                                            <button type="submit"><i class="fas fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--  -->
+                        <div class="col-5 col-lg-1 order-1 order-lg-2 d-flex justify-content-end align-items-center">
+                            <ul class="d-flex align-items-center justify-content-end ">
+
+                                <li class="menu-toggle d-lg-none">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <!-- Start Hero Section -->
+        <div class="hero-section" style="background-image: url(img/main-slider.jpg);">
+            <div class="row no-gutters">
+                <div class="col-lg-7">
+                    <div class="row hvr-tabs">
+                        <div class="col-lg-3">
+                            <ul class="hvr-tabs-items">
+                                <li class="active" data-tab=".hvr-tab-1">
+                                    تعريف <span>المنصة</span>
+                                </li>
+                                <li data-tab=".hvr-tab-2">
+                                    مميزات <span>المنصة</span>
+                                </li>
+                                <li data-tab=".hvr-tab-3">
+                                    أهداف <span>المنصة</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-9 overflow-hidden">
+                            <div class="hvr-tab-content">
+                                <div class="hvr-tab-1 animate slideInLeft"> من المنصات الأولى في تقديم خدمات بحثية
+                                    للمتخصصين من طلاب
+                                    العلم في مجال علوم القرآن والسنة النبوية </div>
+                                <div class="hvr-tab-2  animate slideInLeft">توفر منصة الوحيين مجموعة متنوعة من البرامج
+                                    التعليمية
+                                    الإلكترونية يمكن تصنيفها من حيث الطبيعة إلي برامج عامة وبرامج متخصصة , جميع
+                                    البرامج والمساقات المقدمة من خلال "الوحيين" متخصصة ومنتقاة ومعدة وفق أحدث
+                                    الأساليب العلمية
+
+                                </div>
+                                <div class="hvr-tab-3  animate slideInLeft">الريادة في تبنى تخصصات ومهارات المستقبل
+                                    لإعداد جيل من العلماء
+                                    والقادة يساهم في تنمية الاقتصاد والمجتمع والوطن.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1">
+                    <div class="gallery-top-container">
+                        <div class="swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="content text-center">
+                                        <h3 class="title">
+                                            الوحيين منصة رقمية لتعليم علوم القرآن الكريم والسنة النبوية الشريفة
+                                        </h3>
+                                        <p class="text">
+                                            يتم تأسيسها بمادرة من جامعة جدة التي تحرص على بذل كافة الجهود والمساعي
+                                            للمساهمة
+                                            في
+                                            إيصال وتعليم وتوسيع دائرة المستفيدين من القرآن الكريإيصال وتعليم وتوسيع
+                                            دائرة المستفيدين من القرآن الكريم والسنة النبوية الشريفة
+                                            على
+                                            الوجه الصحيحم والسنة النبوية الشريفة
+                                            على
+                                            الوجه الصحيح
+                                        </p>
+                                        <button class="btn btn-outline-primary">
+                                            قراءة المزيد
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content text-center">
+                                        <h3 class="title">
+                                            الوحيين منصة رقمية لتعليم علوم القرآن الكريم والسنة النبوية الشريفة
+                                        </h3>
+                                        <p class="text">
+                                            يتم تأسيسها بمادرة من جامعة جدة التي تحرص على بذل كافة الجهود والمساعي
+                                            للمساهمة
+                                            في
+                                            إيصال وتعليم وتوسيع دائرة المستفيدين من القرآن الكريم والسنة النبوإيصال
+                                            وتعليم وتوسيع دائرة المستفيدين من القرآن الكريم والسنة النبوية الشريفة
+                                            على
+                                            الوجه الصحيحية الشريفة
+                                            على
+                                            الوجه الصحيح
+                                        </p>
+                                        <button class="btn btn-outline-primary">
+                                            قراءة المزيد
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content text-center">
+                                        <h3 class="title">
+                                            الوحيين منصة رقمية لتعليم علوم القرآن الكريم والسنة النبوية الشريفة
+                                        </h3>
+                                        <p class="text">
+                                            يتم تأسيسها بمادرة من جامعة جدة التي تحرص على بذل كافة الجهود والمساعي
+                                            للمساهمة
+                                            في
+                                            إيصال وتعليم وتوسيع دائرة المستفيدين من القرآن الكريم والسنة النبوية الشريفة
+                                            على
+                                            الوإيصال وتعليم وتوسيع دائرة المستفيدين من القرآن الكريم والسنة النبوية
+                                            الشريفة
+                                            على
+                                            الوجه الصحيحإيصال وتعليم وتوسيع دائرة المستفيدين من القرآن الكريم والسنة
+                                            النبوية الشريفة
+                                            على
+                                            الوجه الصحيحجه الصحيح
+                                        </p>
+                                        <button class="btn btn-outline-primary">
+                                            قراءة المزيد
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="content text-center">
+                                        <h3 class="title">
+                                            الوحيين منصة رقمية لتعليم علوم القرآن الكريم والسنة النبوية الشريفة
+                                        </h3>
+                                        <p class="text">
+                                            يتم تأسيسها بمادرة من جامعة جدة التي تحرص على بذل كافة الجهود والمساعي
+                                            للمساهمة
+                                            في
+                                            إيصال وتعليم وتوسيع دائرة المستفيدين من القرآن الكريم والسنة النبوية الشريفة
+                                            على
+                                            الوجه الصحيحإيصال وتعليم وتوسيع دائرة المستفيدين من القرآن الكريم والسنة
+                                            النبوية الشريفة
+                                            على
+                                            الوجه الصحيح
+                                        </p>
+                                        <button class="btn btn-outline-primary">
+                                            قراءة المزيد
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- thumbs -->
+            <div class="gallery-thumbs-container">
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(img/news-image.jpg)"></div>
+                        <div class="swiper-slide" style="background-image: url(img/video-gallery-img.jpg)"></div>
+                        <div class="swiper-slide" style="background-image: url(img/latest-news-bk.jpg)"></div>
+                        <div class="swiper-slide" style="background-image: url(img/land-center-bk.jpg)"></div>
+                    </div>
+                </div>
+                <div class="controlls">
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Hero Section -->
+
+        <div class="middel-section">
+            <div class="container">
+                <!--  -->
+                <div class="row mt-5">
+                    <div class="col-md-7 mb-4 mb-lg-0">
+                        <!-- Carousel -->
+                        <div class="news-carousel overflow-hidden">
+                            <div class="swiper-container wow slideInRight" data-wow-duration="2s">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="row flex-column flex-md-row">
+                                            <div
+                                                class="col-md-6 col-lg-7 d-flex justify-content-center justify-content-xl-start">
+                                                <img class="img-fluid slide-img" src="img/land-center-bk.jpg" alt="...">
+                                            </div>
+                                            <div class="col-md-6 col-lg-5">
+                                                <div class="content">
+                                                    <h3 class="title">كلمة رئيس الجامعة</h3>
+                                                    <h6 class="sub-title">الحمد لله رب العالمين والصلاة والسلام على خير
+                                                        البشر محمد الهادي
+                                                        الأمين.. وبعد
+                                                    </h6>
+                                                    <p class="text">
+                                                        فمن نعمة الله عز وجل على بني الإنسان أنه اختصهم بالعقل وشرفهم
+                                                        بالعلم، ولا يزال العلم سلاح الإنسان نحو التقدم والرقي، وقد قالوا
+                                                        "ما
+                                                        صنع المجد كالأقلام ولا بنى الأمم كالأفكار" من أجل ذلك كان الطموح
+                                                        نحو
+                                                        التقدم والرقيّ
+                                                    </p>
+                                                    <a href="#" class="show-more d-flex align-items-center">المزيد <img
+                                                            alt="..." src="img/arrow-left.svg"></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="swiper-slide">
+                                        <div class="row flex-column flex-md-row">
+                                            <div
+                                                class="col-md-6 col-lg-7 d-flex justify-content-center justify-content-xl-start">
+                                                <img class="img-fluid slide-img" src="img/land-center-bk.jpg" alt="...">
+                                            </div>
+                                            <div class="col-md-6 col-lg-5">
+                                                <div class="content">
+                                                    <h3 class="title">كلمة رئيس الجامعة</h3>
+                                                    <h6 class="sub-title">الحمد لله رب العالمين والصلاة والسلام على خير
+                                                        البشر محمد الهادي
+                                                        الأمين.. وبعد
+                                                    </h6>
+                                                    <p class="text">
+                                                        فمن نعمة الله عز وجل على بني الإنسان أنه اختصهم بالعقل وشرفهم
+                                                        بالعلم، ولا يزال العلم سلاح الإنسان نحو التقدم والرقي، وقد قالوا
+                                                        "ما
+                                                        صنع المجد كالأقلام ولا بنى الأمم كالأفكار" من أجل ذلك كان الطموح
+                                                        نحو
+                                                        التقدم والرقيّ
+                                                    </p>
+                                                    <a href="#" class="show-more d-flex align-items-center">المزيد <img
+                                                            alt="..." src="img/arrow-left.svg"></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 wow fadeInUp" data-wow-duration="3s">
+                        <div class="widgets-section">
+                            <div class="app-widget">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <div class="text">
+                                            <p>تطبيق</p>
+                                            <h4 class="title">الوحييين</h4>
+                                        </div>
+                                        <div class="apps-links">
+                                            <div class="row no-gutters">
+                                                <div class="mr-2">
+                                                    <a href="">
+                                                        <img class="img-fluid" src="img/app-wed-plya.png" alt="...">
+                                                    </a>
+                                                </div>
+                                                <div class=" ">
+                                                    <a href="">
+                                                        <img class="img-fluid" src="img/app-wed.png" alt="...">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="phone">
+                                            <img class="img-fluid" src="img/phone.png" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="fancy-tabs">
+                    <div class="row mt-5">
+                        <div class="col-md-4 order-1 order-md-0">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="fancy-content-1" role="tabpanel"
+                                    aria-labelledby="contact-tab-1">
+                                    <div class="wow slideInRight animate">
+                                        <h2 class="main-title" title="الإرشاد الطلابي">
+                                            <span class="animate slideInRight">البرامج <strong>النظامية</strong></span>
+                                        </h2>
+
+                                        <p class="text">توفر منصة الوحيين مجموعة متنوعة من البرامج التعليمية الإلكترونية
+                                            يمكن تصنيفها من
+                                            حيث الطبيعة إلي برامج عامة وبرامج متخصصة , جميع البرامج والمساقات المقدمة من
+                                            خلال "الوحيين" متخصصة ومنتقاة ومعدة وفق أحدث الأساليب العلمية </p>
+                                        <span class="note">يرجى العلم انه يجب عليك تسجيل دخولك اولا للبوابة للتمكن من
+                                            الاستفادة من هذه الخدمات </span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="fancy-content-2" role="tabpanel"
+                                    aria-labelledby="contact-tab-2">
+                                    <div class="animate slideInRight">
+
+                                        <h2 class="main-title" title="الإرشاد الطلابي">
+                                            <span class="animate slideInRight">برامج <strong>التعليم
+                                                    الذاتي</strong></span>
+                                        </h2>
+
+                                        <p class="text">توفر منصة الوحيين مجموعة متنوعة من البرامج التعليمية الإلكترونية
+                                            يمكن تصنيفها من
+                                            حيث الطبيعة إلي برامج عامة وبرامج متخصصة , جميع البرامج والمساقات المقدمة من
+                                            خلال "الوحيين" متخصصة ومنتقاة ومعدة وفق أحدث الأساليب العلمية </p>
+                                        <span class="note">يرجى العلم انه يجب عليك تسجيل دخولك اولا للبوابة للتمكن من
+                                            الاستفادة من هذه الخدمات </span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="fancy-content-3" role="tabpanel"
+                                    aria-labelledby="contact-tab-3">
+                                    <div class="animate slideInRight">
+                                        <h2 class="main-title" title="الإرشاد الطلابي">
+                                            <span class="animate slideInRight">البرامج <strong>المتخصصة</strong></span>
+                                        </h2>
+
+                                        <p class="text">توفر منصة الوحيين مجموعة متنوعة من البرامج التعليمية الإلكترونية
+                                            يمكن تصنيفها من
+                                            حيث الطبيعة إلي برامج عامة وبرامج متخصصة , جميع البرامج والمساقات المقدمة من
+                                            خلال "الوحيين" متخصصة ومنتقاة ومعدة وفق أحدث الأساليب العلمية </p>
+                                        <span class="note">يرجى العلم انه يجب عليك تسجيل دخولك اولا للبوابة للتمكن من
+                                            الاستفادة من هذه الخدمات </span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="fancy-content-4" role="tabpanel"
+                                    aria-labelledby="contact-tab-4">
+                                    <div class="animate slideInRight">
+                                        <h2 class="main-title" title="الإرشاد الطلابي">
+                                            <span class="animate slideInRight">البحث العلمي <strong>والدراسات
+                                                    العليا</strong></span>
+                                        </h2>
+
+                                        <p class="text">توفر منصة الوحيين مجموعة متنوعة من البرامج التعليمية الإلكترونية
+                                            يمكن تصنيفها من
+                                            حيث الطبيعة إلي برامج عامة وبرامج متخصصة , جميع البرامج والمساقات المقدمة من
+                                            خلال "الوحيين" متخصصة ومنتقاة ومعدة وفق أحدث الأساليب العلمية </p>
+                                        <span class="note">يرجى العلم انه يجب عليك تسجيل دخولك اولا للبوابة للتمكن من
+                                            الاستفادة من هذه الخدمات </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 offset-md-2 order-0 order-md-1 mb-4 mb-md-0">
+                            <ul class="nav tab-items row no-gutters" id="myTab" role="tablist">
+                                <li class="nav-item col-3">
+                                    <a class="nav-link active" data-toggle="tab" href="#fancy-content-1" role="tab"
+                                        aria-controls="home" aria-selected="true">
+                                        <div><img alt="..." src="img/apps-books.png"></div>
+                                        البرامج <br>
+                                        النظامية
+                                    </a>
+                                </li>
+                                <li class="nav-item col-3">
+                                    <a class="nav-link" data-toggle="tab" href="#fancy-content-2" role="tab"
+                                        aria-controls="profile" aria-selected="false">
+                                        <div><img alt="..." src="img/app-ipad.png"></div>
+
+                                        برامج <br>
+                                        التعليم الذاتي
+                                    </a>
+                                </li>
+                                <li class="nav-item col-3">
+                                    <a class="nav-link" data-toggle="tab" href="#fancy-content-3" role="tab"
+                                        aria-controls="contact" aria-selected="false">
+                                        <div><img alt="..." src="img/app-pen.png"></div>
+                                        البرامج <br>
+                                        المتخصصة
+                                    </a>
+                                </li>
+                                <li class="nav-item col-3">
+                                    <a class="nav-link" data-toggle="tab" href="#fancy-content-4" role="tab"
+                                        aria-controls="search" aria-selected="false">
+                                        <div><img alt="..." src="img/app-collage.png"></div>
+                                        البحث العلمي <br>
+                                        والدراسات العليا
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="more-fancy-app row no-gutters">
+                                <a href="" class="col-6 offset-6">
+                                    المزيد من البرامج
+                                    <img class="ml-4" src="img/more-arrow.png">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Land Services Section  -->
+        <div class="land-services text-center text-lg-left mt-5" style="background-image: url(img/land-center-bk.jpg);">
+            <div class="container">
+                <img class=" wow jello" src="img/servicesicon.png" alt="a">
+                <h3 class="title mb-2 wow jello" data-wow-duration="2s"><span>خدمات</span>
+                    المقرأة الالكترونية</h3>
+                <p class="text mb-5  wow jello" data-wow-duration="2s">مقرأة إلكترونية تراعي فروق التوقيت حول العالم،
+                    وتتبع منهج محدد ودقيق من بداية الإلتحاق بها حتى ختم القرآن الكريم كاملًا.
+                </p>
+                <div class="row no-gutters">
+                    <div class="col-md-4 col-xl-2 mb-3 mr-md-3">
+                        <button class="btn btn-outline-primary w-100 pr-3 pl-3">الاشتراك في المقرأه
+                        </button>
+                    </div>
+                    <div class="col-md-4 col-xl-2 mb-3  mr-md-3">
+                        <button class="btn btn-outline-primary w-100">مواعيد المقرأة </button>
+                    </div>
+                    <div class="col-md-4 col-xl-2">
+                        <button class="btn btn-outline-primary w-100">كيفية الاستخدام</button></div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- ENd Land Services Section  -->
+
+
+        <!-- Start Latest News Section-->
+        <div class="latest-news-section pt-5 " style="background-image: url(img/latest-news-bk.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3  mb-5 mb-lg-0 pt-lg-5">
+                        <div class="mt-lg-5">
+                            <h2 class="main-title">
+                                <span class="wow slideInRight">أحدث <strong>الأخبار</strong></span>
+                            </h2>
+                            <p class="sub-title">المركز الإعلامي لمنصة الوحيين </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9  overflow-hidden">
+                        <div class="row no-gutters">
+                            <div class="col-md mb-5 mb-md-0 wow slideInDown" data-wow-duration="1.5s">
+                                <div class="news-item has-border-bottom"
+                                    style="background-image: url(img/latest-news-item.jpg);">
+                                    <p class="text-p">التدشين الرسمي لمنصة الوحيين في الحفل السنوي لجامعة جدة بحضور<br>
+                                        معالي /
+                                        .............................
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md offset-md-1  wow slideInDown" data-wow-duration="1.5s">
+                                <div class="news-item has-border-bottom-brown"
+                                    style="background-image: url(img/latest-news-item.jpg);">
+                                    <p class="text-p">التدشين الرسمي لمنصة الوحيين في الحفل السنوي لجامعة جدة بحضور<br>
+                                        معالي /
+                                        .............................
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-5 wow slideInUp" data-wow-duration="1.5s">
+                                <div class="news-item-land has-border-bottom-brown-side">
+                                    <div class="row no-gutters">
+                                        <div class="col-sm-4 d-flex justify-content-center justify-content-xl-start">
+                                            <img class="img-fluid" alt="..." src="img/news-item-land.jpg">
+                                        </div>
+                                        <div class="col-sm-8">
+                                            <div class="content">
+                                                <h3 class="title">التدشين الرسمي لمنصة الوحيين في الحفل السنوي لجامعة
+                                                    جدة بحضور معالي
+                                                    /
+                                                    .............................</h3>
+                                                <p class="text">من المنصات الأولى في تقديم خدمات بحثية للمتخصصين من طلاب
+                                                    العلم في
+                                                    مجال
+                                                    علوم القرآن والسنة النبوية</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Latest News Section-->
+
+        <div class="gallery-section overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-5 mb-md-0">
+                        <div class="pb-5  wow slideInRight">
+                            <h2 class="main-title">
+                                <span class="wow slideInRight">معرض <strong>وسائط المنصة</strong></span>
+                            </h2>
+                            <p class="sub-title">هي مكتبة تتضمن مجموعة كبيرة ومتنوعة من المواد المرئية ذات جودة عالية
+                                ودقة بالغة , تم إعدادها من قبل متخصصين ...... <a href="">المزيد</a>
+                            </p>
+                        </div>
+                        <ul class="gallery-list row mt-5">
+                            <li class="col-6 col-sm-4">
+                                <a data-fancybox="media-images" href="img/news-item-land.jpg">
+                                    <img class="img-fluid" alt="..." src="img/news-item-land.jpg">
+                                </a>
+                            </li>
+                            <li class="col-6 col-sm-4">
+                                <a data-fancybox="media-images" href="img/news-item-land.jpg">
+                                    <img class="img-fluid" alt="..." src="img/news-item-land.jpg">
+                                </a>
+                            </li>
+                            <li class="col-6 col-sm-4">
+                                <a data-fancybox="media-images" href="img/news-item-land.jpg">
+                                    <img class="img-fluid" alt="..." src="img/news-item-land.jpg">
+                                </a>
+                            </li>
+                            <li class="col-6 col-sm-4">
+                                <a data-fancybox="media-images" href="img/news-item-land.jpg">
+                                    <img class="img-fluid" alt="..." src="img/news-item-land.jpg">
+                                </a>
+                            </li>
+                            <li class="col-6 col-sm-4">
+                                <a data-fancybox="media-images" href="img/news-item-land.jpg">
+                                    <img class="img-fluid" alt="..." src="img/news-item-land.jpg">
+                                </a>
+                            </li>
+                            <li class="col-6 col-sm-4">
+                                <a data-fancybox="media-images" href="img/news-item-land.jpg">
+                                    <img class="img-fluid" alt="..." src="img/news-item-land.jpg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 mb-5 mb-md-0">
+                        <div class="gallery-video wow fadeInUp" data-wow-duration="2s">
+                            <a data-fancybox="videos" href="https://www.youtube.com/watch?v=2XqYS8Avq2U">
+                                <img class="img-fluid" src="img/video-gallery-img.jpg" alt="s">
+
+                                <span class="title">
+                                    جامعه جدة الدولية
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Start Digital Library Section -->
+        <div class="digital-library" style="background-image: url(img/digital-library.jpg);">
+            <div class="container">
+                <div class="row no-gutters" style="position: relative; z-index: 4;">
+                    <div class="col-lg-3">
+                        <h2 class="main-title mb-5">
+                            <span class="wow slideInRight">المكتبة <strong>الرقمية</strong></span>
+                        </h2>
+
+                        <ul class="nav tab-items flex-lg-column" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#library-content-1" role="tab"
+                                    aria-controls="home" aria-selected="true">
+                                    البحث المتقدم
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#library-content-2" role="tab"
+                                    aria-controls="profile" aria-selected="false">
+                                    الملفات الأحدث
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="library-content-1" role="tabpanel"
+                                aria-labelledby="contact-tab-1">
+                                <div class="wow fadeInUp animate">
+                                    <form action="">
+                                        <div class="row mb-4">
+                                            <div class="col-md-7 mb-4 mb-md-0">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <select class="form-control">
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select class="form-control">
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <input class="form-control" placeholder="أدخل كلمات البحث هنا ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row mb-4">
+                                            <div class="col-md-7 mb-4 mb-md-0">
+                                                <div class="row">
+                                                    <div class="col-2 pr-0">
+                                                        <select class="form-control">
+                                                            <option>و</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select class="form-control">
+                                                            <option>و</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select class="form-control">
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <input class="form-control" placeholder="أدخل كلمات البحث هنا ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row mb-4">
+                                            <div class="col-md-7 mb-4 mb-md-0">
+                                                <div class="row">
+                                                    <div class="col-2 pr-0">
+                                                        <select class="form-control">
+                                                            <option>و</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select class="form-control">
+                                                            <option>و</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select class="form-control">
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <input class="form-control" placeholder="أدخل كلمات البحث هنا ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-5 offset-md-7">
+                                                <div class="row no-gutters align-items-center">
+                                                    <div class="col-4 pr-3">
+                                                        <button class="btn btn-primary w-100 pr-2 pl-2 rounded">
+                                                            ابحث
+                                                            <i class="fas fa-arrow-left ml-1"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <button class="btn btn-danger w-100 pr-2 pl-2 rounded">
+                                                            مسح
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-5 d-flex justify-content-end">
+                                                        <a href="">
+                                                            البحث المتقدم
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="library-content-2" role="tabpanel"
+                                aria-labelledby="contact-tab-2">
+                                <div class="animate fadeInUp">
+                                    <form action="">
+                                        <div class="row mb-4">
+                                            <div class="col-md-7 mb-4 mb-md-0">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <select class="form-control">
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select class="form-control">
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <input class="form-control" placeholder="أدخل كلمات البحث هنا ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row mb-4">
+                                            <div class="col-md-7 mb-4 mb-md-0">
+                                                <div class="row">
+                                                    <div class="col-2 pr-0">
+                                                        <select class="form-control">
+                                                            <option>و</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select class="form-control">
+                                                            <option>و</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select class="form-control">
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <input class="form-control" placeholder="أدخل كلمات البحث هنا ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--  -->
+                                        <div class="row mb-4">
+                                            <div class="col-md-7 mb-4 mb-md-0">
+                                                <div class="row">
+                                                    <div class="col-2 pr-0">
+                                                        <select class="form-control">
+                                                            <option>و</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <select class="form-control">
+                                                            <option>و</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                            <option>وعنوان</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <select class="form-control">
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                            <option>العنوان</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <input class="form-control" placeholder="أدخل كلمات البحث هنا ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-5 offset-md-7">
+                                                <div class="row no-gutters align-items-center">
+                                                    <div class="col-4 pr-3">
+                                                        <button class="btn btn-primary w-100 pr-2 pl-2">
+                                                            ابحث
+                                                            <i class="fas fa-arrow-left ml-1"></i>
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <button class="btn btn-danger w-100 pr-2 pl-2">
+                                                            مسح
+                                                        </button>
+                                                    </div>
+                                                    <div class="col-5 d-flex justify-content-end">
+                                                        <a href="">
+                                                            البحث المتقدم
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-9 offset-lg-3">
+                        <div class="digital-library-boxes">
+                            <div class="row justify-content-between">
+                                <div class="col-6 col-sm-6 mb-4 mb-md-0 col-md">
+                                    <div class="numbers-box">
+                                        <a href="">
+                                            <div class="image">
+                                                <img alt="..." src="img/student-icon.png">
+                                            </div>
+                                            <p>عدد الطلاب</p>
+
+                                            <div>
+                                                <span>17.000 </span>
+                                                <i class="fas fa-arrow-left ml-1"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 mb-4 mb-md-0 col-md">
+                                    <div class="numbers-box">
+                                        <a href="">
+                                            <div class="image">
+                                                <img alt="..." src="img/grad.png">
+                                            </div>
+                                            <p>عدد المجازين</p>
+
+                                            <div>
+                                                <span>17.000 </span>
+                                                <i class="fas fa-arrow-left ml-1"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 mb-4 mb-md-0 col-md">
+                                    <div class="numbers-box">
+                                        <a href="">
+                                            <div class="image">
+                                                <img alt="..." src="img/program.png">
+                                            </div>
+                                            <p>عدد البرامج</p>
+
+                                            <div>
+                                                <span>17.000 </span>
+                                                <i class="fas fa-arrow-left ml-1"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 mb-4 mb-md-0 col-md">
+                                    <div class="numbers-box">
+                                        <a href="">
+                                            <div class="image">
+                                                <img alt="..." src="img/books.png">
+                                            </div>
+                                            <p>عدد الكتب</p>
+
+                                            <div>
+                                                <span>5.000 </span>
+                                                <i class="fas fa-arrow-left ml-1"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md">
+                                    <div class="numbers-box">
+                                        <a href="">
+                                            <div class="image">
+                                                <img alt="..." src="img/searches.png">
+                                            </div>
+                                            <p>عدد الأبحاث</p>
+                                            <div>
+                                                <span>17.000 </span>
+                                                <i class="fas fa-arrow-left ml-1"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Digital Library Section -->
+
+        <!-- STart Time Line -->
+        <div class="events-section" style="background-image: url(img/events.jpg);">
+            <div class="container">
+                <h2 class="main-title mb-4 d-lg-none">
+                    <span class="wow slideInRight white-color">أحداث <strong>وفعاليات</strong> <span
+                            class="number">2020</span></span>
+                </h2>
+                <div class="row">
+                    <div class="col-12 mb-2 mb-lg-5">
+                        <div class="timeline-events">
+                            <div class="swiper-container" role="tablist" dir="rtl">
+                                <ul class="nav swiper-wrapper flex-nowrap">
+                                    <li class="swiper-slide swiper-slide-active ">
+                                        <a class="active" data-toggle="tab" href="#event-content-1" role="tab"
+                                            aria-controls="home" aria-selected="true">
+                                            <span>يناير
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-2" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>فبراير
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-3" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>مارس
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-4" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>أبريل
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-5" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>مايو
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-6" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>يونيو
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-7" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>يوليو
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-8" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>أغسطس
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-9" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>سبتمبر
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-10" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>أكتوبر
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-11" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>نوفمبر
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <a data-toggle="tab" href="#event-content-12" role="tab" aria-controls="profile"
+                                            aria-selected="false">
+                                            <span>ديسمبر
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-next swiper-button-white"></div>
+                                <div class="swiper-button-prev swiper-button-white"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 pt-4">
+                        <div class="row">
+                            <div class="col-lg-3 d-none d-lg-block">
+                                <h2 class="main-title mb-5">
+                                    <span class="wow slideInRight white-color">أحداث <strong>وفعاليات</strong> <span
+                                            class="number">2020</span></span>
+                                </h2>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="tab-content">
+                                    <!-- Month 1 -->
+                                    <div class="tab-pane fade show active" id="event-content-1" role="tabpanel"
+                                        aria-labelledby="contact-tab-1">
+                                        <div class="wow animate fadeInUp animate" data-wow-duration="2s">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-1">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 2  -->
+                                    <div class="tab-pane fade" id="event-content-2" role="tabpanel"
+                                        aria-labelledby="contact-tab-2">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-2">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 3  -->
+                                    <div class="tab-pane fade" id="event-content-3" role="tabpanel"
+                                        aria-labelledby="contact-tab-3">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-3">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 4  -->
+                                    <div class="tab-pane fade" id="event-content-4" role="tabpanel"
+                                        aria-labelledby="contact-tab-4">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-4">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 5  -->
+                                    <div class="tab-pane fade" id="event-content-5" role="tabpanel"
+                                        aria-labelledby="contact-tab-5">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-5">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 6  -->
+                                    <div class="tab-pane fade" id="event-content-6" role="tabpanel"
+                                        aria-labelledby="contact-tab-6">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-6">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 7 -->
+                                    <div class="tab-pane fade" id="event-content-7" role="tabpanel"
+                                        aria-labelledby="contact-tab-7">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-7">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 8 -->
+                                    <div class="tab-pane fade" id="event-content-8" role="tabpanel"
+                                        aria-labelledby="contact-tab-8">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-8">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 9 -->
+                                    <div class="tab-pane fade" id="event-content-9" role="tabpanel"
+                                        aria-labelledby="contact-tab-9">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-9">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 10 -->
+                                    <div class="tab-pane fade" id="event-content-10" role="tabpanel"
+                                        aria-labelledby="contact-tab-10">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-10">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 11 -->
+                                    <div class="tab-pane fade" id="event-content-11" role="tabpanel"
+                                        aria-labelledby="contact-tab-11">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-11">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Month 12 -->
+                                    <div class="tab-pane fade" id="event-content-12" role="tabpanel"
+                                        aria-labelledby="contact-tab-12">
+                                        <div class="animate fadeInUp">
+                                            <!-- Event Carousel -->
+                                            <div class="carousel-event carousel-12">
+                                                <div class="swiper-container">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="event-card">
+                                                                <div class="row no-gutters dates">
+                                                                    <div>
+                                                                        <div class="mb-2">تاريخ البدء</div>
+                                                                        <div>تاريخ الانتهاء</div>
+                                                                    </div>
+                                                                    <div class="col pl-4">
+                                                                        <p class="mb-2"><span>20</span> محرم
+                                                                            <span>1441</span></p>
+                                                                        <p><span>20</span> محرم <span>1441</span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <p>التدشين الرسمي لمنصة الوحيين
+                                                                        في الحفل السنوي لجامعة جدة بحضور
+                                                                        معالي / .............................</p>
+                                                                </div>
+                                                                <div class="text-right">
+                                                                    <a href=""> التفاصيل</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Add Arrows -->
+                                                    <div class="swiper-button-next swiper-button-white"></div>
+                                                    <div class="swiper-button-prev swiper-button-white"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Time Line -->
+
+
+
+        <!-- graduate-stories -->
+        <div class="graduate-stories" style="background-image: url(img/graduate-stories.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 d-flex align-items-lg-center mb-5 mb-lg-0">
+                        <div>
+                            <h2 class="main-title mb-3">
+                                <span class="wow slideInRight">قصص <strong>نجاح الخريجين</strong></span>
+                            </h2>
+                            <p class="sub-title">شاركنا تجربة نجاحك وقصتك مع منصة الوحيين </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="graduate-carousel">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="row no-gutters">
+                                            <div class="col-sm-3 mb-5 mb-sm-0">
+                                                <div class="graduate-card">
+                                                    <img src="img/user.jpg">
+                                                    <p>
+                                                        حاصل علي إجازة <br>
+                                                        القرآن الكريم برواية حفص
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="title">
+                                                    علي أحمد الشمري
+                                                </div>
+                                                <div class="content">
+                                                    <p class="text"> أود مشاركتكم تجربتي في الالتحاق بمنصة الوحيين فقد
+                                                        تجاوزت توقعاتي
+                                                        ،
+                                                        والمهارات التي اكتسبتها ساهمت بشكل فعّال في تحسين أدائي في تلاوة
+                                                        القرآن الكريم وفي دراسة علوم السنة النبوية الشريفة وأتطلع
+                                                        للالتحاق
+                                                        بمزيد من البرامج في المستقبل </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="swiper-slide">
+                                        <div class="row no-gutters">
+                                            <div class="col-sm-3 mb-5 mb-sm-0">
+                                                <div class="graduate-card">
+                                                    <img src="img/user.jpg">
+                                                    <p>
+                                                        حاصل علي إجازة <br>
+                                                        القرآن الكريم برواية حفص
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="title">
+                                                    علي أحمد الشمري
+                                                </div>
+                                                <div class="content">
+                                                    <p class="text"> أود مشاركتكم تجربتي في الالتحاق بمنصة الوحيين فقد
+                                                        تجاوزت توقعاتي
+                                                        ،
+                                                        والمهارات التي اكتسبتها ساهمت بشكل فعّال في تحسين أدائي في تلاوة
+                                                        القرآن الكريم وفي دراسة علوم السنة النبوية الشريفة وأتطلع
+                                                        للالتحاق
+                                                        بمزيد من البرامج في المستقبل </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="swiper-slide">
+                                        <div class="row no-gutters">
+                                            <div class="col-sm-3 mb-5 mb-sm-0">
+                                                <div class="graduate-card">
+                                                    <img src="img/user.jpg">
+                                                    <p>
+                                                        حاصل علي إجازة <br>
+                                                        القرآن الكريم برواية حفص
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-9">
+                                                <div class="title">
+                                                    علي أحمد الشمري
+                                                </div>
+                                                <div class="content">
+                                                    <p class="text"> أود مشاركتكم تجربتي في الالتحاق بمنصة الوحيين فقد
+                                                        تجاوزت توقعاتي
+                                                        ،
+                                                        والمهارات التي اكتسبتها ساهمت بشكل فعّال في تحسين أدائي في تلاوة
+                                                        القرآن الكريم وفي دراسة علوم السنة النبوية الشريفة وأتطلع
+                                                        للالتحاق
+                                                        بمزيد من البرامج في المستقبل </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End graduate-stories -->
+
+        <!-- Start helper top sectio -->
+        <div class="helper-section overflow-hidden" style="background-image: url(img/gada-bk.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-4 mb-lg-0  wow fadeInRight" data-wow-duration="2s">
+                        <div class="learning-adviser-box">
+                            <div class="row no-gutters adviser">
+                                <div class="col">
+                                    <h3>
+                                        مستشارك
+                                        <span>التعليمي</span>
+                                    </h3>
+                                    <p>إبدأ الآن وتواصل مع مستشارك التعليمي للالتحاق بأفضل برنامج مناسب لك ..</p>
+                                    <a href="" class="link">
+                                        إضغط هنا
+                                        <i class="fas fa-caret-left ml-2"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <img alt="..." src="img/helper-man.png">
+                                </div>
+                            </div>
+                            <div class="user-manual">
+                                <a href="" class="row no-gutters align-items-center">
+                                    <div class="pr-3">
+                                        <img alt="..." src="img/helper-read-book.png">
+                                    </div>
+                                    <div class="col">
+                                        <h3>
+                                            دليل الاستخدام
+                                            <span>
+                                                شرح تفصيلي لطريقة
+                                                استخدام منصة الوحيين
+                                            </span>
+                                        </h3>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 wow fadeInUp" data-wow-duration="2s">
+                        <div class="how-can-help">
+                            <div class="help-form text-center">
+                                <h2 class="mb-3">كيف يمكننا <strong>مساعدتك ؟</strong></h2>
+                                <form action="">
+                                    <input class="mb-3" placeholder="اكتب سؤالك أو استفسارك وسوف نجيب عليه">
+                                    <button class="btn btn-secondry" type="submit">
+                                        ابحث عن الإجابة
+                                        <i class="fas fa-caret-left ml-2"></i>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="technical-support">
+                                <a href="">
+                                    <div class="row no-gutters align-items-center justify-content-center">
+                                        <div>
+                                            <img src="img/tec-support.png" alt="...">
+                                        </div>
+                                        <div class="col ml-4">
+                                            <h2 class="main-title" title="الإرشاد الطلابي">
+                                                <span class="animate slideInRight">نظام <strong>الدعم
+                                                        الفني</strong></span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 wow fadeInLeft" data-wow-duration="2s">
+                        <div class="map-box">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.527215867017!2d39.18633451425415!3d21.52623097598643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3cfce4cb12963%3A0x87c88ad1a362a103!2z2KzYp9mF2LnYqSDYrNiv2Kk!5e0!3m2!1sen!2seg!4v1581453385616!5m2!1sen!2seg"
+                                width="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            <!--  -->
+                            <span class="title">جامعه جدة الدولية</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end helper top sectio -->
+
+        <!-- Start Footer -->
+        <footer class="footer overflow-hidden">
+            <div class="container">
+                <!-- Promo -->
+                <div class="footer-promo mb-4">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-3 col-sm-2 col-md-1 pr-2">
+                            <span class="twitter justify-content-center">
+                                <i class="fab fa-twitter"></i>
+                            </span>
+                        </div>
+                        <div class="col-9 col-sm-10 col-md-11">
+                            <p>برومو | تدشين معالي مدير #جامعة_جدة د.عدنان الحميدان فعاليات الملتقى العلمي الطلابي
+                                الرابع برومو | تدشين
+                                <a href="">
+                                    https://twitter.com/UOfjeddah/status/1225514666480283670
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Menus -->
+                <div class="footer-menu-links">
+                    <div class="row">
+                        <div class="col-sm-6 col-xl-3 text-center text-lg-left wow slideInRight" data-wow-duration="1s">
+                            <h3 class="list-heading">تصفح منصة الوحيين</h3>
+                            <ul class="list">
+                                <li><a href=""> الرؤية والرسالة</a></li>
+                                <li><a href="">الأهداف</a></li>
+                                <li><a href="">أهمية منصة الوحيين</a></li>
+                                <li><a href="">مجالات الاهتمام</a></li>
+                                <li><a href="">مميزات منصة الوحيين</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 text-center text-lg-left wow jackInTheBox" data-wow-duration="1s"
+                            data-wow-delay="0.5s">
+                            <ul class="list">
+                                <li><a href="">التسجيل والقبول</a></li>
+                                <li><a href="">البرامج نظامية </a></li>
+                                <li><a href="">البرامج الغير نظامية</a></li>
+                                <li><a href="">البرامج المتخصصة</a></li>
+                                <li><a href="">البرامج الفعالة</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 text-center text-lg-left wow jackInTheBox" data-wow-duration="1s"
+                            data-wow-delay="0.5s">
+                            <ul class="list">
+                                <li><a href=""> ما هي المقرأة الالكترونية</a></li>
+                                <li><a href="">شروط الاشتراك في المقرأه</a></li>
+                                <li><a href="">الاشتراك في المقرأه الالكترونية</a></li>
+                                <li><a href="">مواعيد المقرأة الالكترونية</a></li>
+                                <li><a href="">كيفية الاستخدام</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-xl-3 text-center text-lg-left  wow slideInLeft" data-wow-duration="1s">
+                            <ul class="list">
+                                <li><a href=""> المكتبة الرقمية</a></li>
+                                <li><a href="">الخدمات البحثية</a></li>
+                                <li><a href="">المجتمع التفاعلي</a></li>
+                                <li><a href="">الإجازات والتوثيق</a></li>
+                                <li><a href="">الشهادات العلمية</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="subscribe-section row no-gutters">
+                            <span class="subscribe-test wow slideInRight">كن على تواصل معنا</span>
+                            <form class="wow slideInLeft col pl-3">
+                                <input type="search" id="site-search" placeholder="البريد الإلكتروني"
+                                    aria-label="Search through site content">
+                                <button class="btn btn-primary">اشترك</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <!--  -->
+                        <div class="footer-connect">
+                            <!--  -->
+                            <div class="row">
+                                <div class="col-lg-8  d-flex justify-content-center mb-4 mb-lg-0 mt-4 mt-lg-0">
+                                    <div class="apps-icons pt-1">
+                                        <div class="play-store wow flipInY" data-wow-duration="1s"
+                                            data-wow-delay="0.5s">
+                                            <a href="">
+                                                <span class="d-none">app</span>
+                                                <img src="img/app-wed.png" alt="app">
+                                            </a>
+                                        </div>
+                                        <div class="app-store wow flipInY" data-wow-duration="1s" data-wow-delay="0.5s">
+                                            <a href="">
+                                                <span class="d-none">app</span>
+                                                <img src="img/app-wed-plya.png" alt="app">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="col-lg-4 mb-4 mb-lg-0">
+                                    <h3 class="call-us mb-3">اتصل بنا</h3>
+                                    <div class="social-icons mr-4">
+                                        <ul>
+                                            <li class=" wow bounce" data-wow-duration="2s" data-wow-delay="0.2s">
+                                                <a href=""> <i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li class="wow bounce" data-wow-duration="2s">
+                                                <a href=""><i class="fab fa-youtube"></i></a>
+                                            </li>
+                                            <li class=" wow bounce" data-wow-duration="2s" data-wow-delay="0.2s"><a
+                                                    href=""><i class="fab fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li class=" wow bounce" data-wow-duration="2s">
+                                                <a href="">
+                                                    <i class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li class=" wow bounce" data-wow-duration="2s" data-wow-delay="0.2s">
+                                                <a href=""><i class="fab fa-snapchat-ghost"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters flex-column align-items-center">
+                    <ul class="footer-nav d-flex flex-wrap justify-content-center mb-4">
+                        <li>
+                            <a href="">
+                                سياسة الخصوصية
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                خريطة الموقع
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                خريطة الموقع
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                الاسئلة الشائعة
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                تواصل معنا
+                            </a>
+                        </li>
+                    </ul>
+                    <div id="bottom" class="license-text  wow swing text-center" data-wow-duration="1s">
+                        حقوق النشر <span>2020</span> ،جميع الحقوق محفوظة لمنصة الوحيين
+                    </div>
+                </div>
+
+
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+
+        <!--Social Media -->
+
+    </div>
+
+
+
+    <div class="fixed-menu">
+        <ul>
+            <li class="animated bounce" data-wow-duration="2s" data-wow-delay="0.2s">
+                <a href=""> <i class="fab fa-twitter"></i></a>
+            </li>
+
+            <li class="animated bounce" data-wow-duration="2s"><a href=""><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="animated bounce" data-wow-duration="2s" data-wow-delay="0.2s">
+                <a href="">
+                    <i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="animated bounce" data-wow-duration="2s">
+                <a href=""><i class="fab fa-facebook"></i></a>
+
+            </li>
+            <li class="animated bounce" data-wow-duration="2s" data-wow-delay="0.2s">
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </li>
+        </ul>
+        <div class="circle">
+            <a href="" data-toggle="tooltip" data-placement="right" title="" data-original-title="فيديوهات">
+                <img src="img/video-shape.png" alt="...">
+            </a>
+        </div>
+        <div class="circle">
+            <a href="" data-toggle="tooltip" data-placement="right" title="" data-original-title="ألبومات الصور">
+                <img src="img/prize.png" alt="...">
+            </a>
+        </div>
+    </div>
+    <!-- Fixed section + social -->
+
+
+
+    <!-- login -->
+    <div class="modal fade loginmodal" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="loginmodal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="icon-close invalid-color"></span>
+                        <span>اغلاق النافذة</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class=" mb-3">البريد الإلكتروني: </label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted mt-2">برجاء عدم مشاركة هذه
+                                المعلومات.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class=" mb-3">الرقم السري</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">قم بإبلاغي </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">تسجيل</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="video" allowfullscreen  data-fancybox href="https://youtu.be/tkGMCiD7EaE">
+        <span class="d-none"> HTML5 video 
+        </span>
+    </a>
+    <!-- <a id="video" data-fancybox href="#myVideo">
+        <span class="d-none"> HTML5 video 
+        </span>
+    </a> -->
+ 
+
+    <!-- <video width="100%" height="100%" controls controls autoplay id="myVideo"  style="display: none;">
+        <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.mp4" type="video/mp4">
+        <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.webm" type="video/webm">
+        <source src="https://www.html5rocks.com/en/tutorials/video/basics/Chrome_ImF.ogv" type="video/ogg">
+        Your browser doesn't support HTML5 video tag.
+    </video> -->
+    <!--  -->
+    <div class="scrollToTop animated bounceIn">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!--Scripts-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- custom -->
+    <script src="js/custom.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
